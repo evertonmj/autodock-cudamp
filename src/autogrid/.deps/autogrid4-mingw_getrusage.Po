@@ -1,0 +1,4 @@
+autogrid4-mingw_getrusage.o: mingw_getrusage.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

@@ -1,0 +1,34 @@
+If you change the auto configure file "configure.ac", then you will need
+to run the command `autoconf`, if you get an error there then you need
+re-generate the .m4 file by running the command `aclocal`. 
+
+    Otherwise if you have not touched the "configure.ac" file then you can
+specify the option --enable-cuda when running "./configure" Also if you
+do not have root, then you will need to set a prefix of where the program
+will be installed to.  So the command would look something like this
+if you want cuda installed and you dont have root:
+        ./configure --prefix=PATH_TO_INSTALL --enable-cuda
+
+By running the command above, will generate a #define CUDA_READY 1.
+
+./configure will generate the Makefile.  So if you have previously ran "make",
+then you will have to run "make clean", especially if you have configured
+the directory without cuda previously.
+
+After you run "make clean", then by running "make" will ensure that the code 
+that checks for the #ifdef is run properly compiled depending on how you 
+configured.
+
+To install autodock, you simply need to run the command "make install"
+
+The executable will be located wherever you specified the path for the
+installation to place the executable in the --prefix= option.
+
+So quick recap to create version for cuda:
+1. run ./configure --prefix=PATH_TO_INSTALL --enable-cuda
+2. "make clean" if a previous version was already configured
+3. "make"
+4. "make install"
+5. navigate to PATH_TO_INSTALL, and autodock should be located there in a bin 
+    folder.
+6. have a beer.

@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="Autodock" targetName="Autodock" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="false" GENERATION_PASS_SYSTEM_ENVIRONMENT="true">
+    <ADDITIONAL_GENERATION_ENVIRONMENT>
+      <envs />
+    </ADDITIONAL_GENERATION_ENVIRONMENT>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40635391-c66c-4c97-8583-50225161cf18" name="Default" comment="adaptação da função de cálculo de energias para cuda">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/analysis.Po" afterPath="$PROJECT_DIR$/.deps/analysis.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/atom_parameter_manager.Po" afterPath="$PROJECT_DIR$/.deps/atom_parameter_manager.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/banner.Po" afterPath="$PROJECT_DIR$/.deps/banner.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/bestpdb.Po" afterPath="$PROJECT_DIR$/.deps/bestpdb.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/calculateEnergies.Po" afterPath="$PROJECT_DIR$/.deps/calculateEnergies.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/call_glss.Po" afterPath="$PROJECT_DIR$/.deps/call_glss.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/call_gs.Po" afterPath="$PROJECT_DIR$/.deps/call_gs.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/call_ls.Po" afterPath="$PROJECT_DIR$/.deps/call_ls.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/changeState.Po" afterPath="$PROJECT_DIR$/.deps/changeState.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/check_header_float.Po" afterPath="$PROJECT_DIR$/.deps/check_header_float.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/check_header_int.Po" afterPath="$PROJECT_DIR$/.deps/check_header_int.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/check_header_line.Po" afterPath="$PROJECT_DIR$/.deps/check_header_line.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/clmode.Po" afterPath="$PROJECT_DIR$/.deps/clmode.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/cluster_analysis.Po" afterPath="$PROJECT_DIR$/.deps/cluster_analysis.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/cmdmode.Po" afterPath="$PROJECT_DIR$/.deps/cmdmode.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/cnv_state_to_coords.Po" afterPath="$PROJECT_DIR$/.deps/cnv_state_to_coords.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/coliny.Po" afterPath="$PROJECT_DIR$/.deps/coliny.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/com.Po" afterPath="$PROJECT_DIR$/.deps/com.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/conformation_sampler.Po" afterPath="$PROJECT_DIR$/.deps/conformation_sampler.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/distdepdiel.Po" afterPath="$PROJECT_DIR$/.deps/distdepdiel.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/eMapPrepCuda.Po" afterPath="$PROJECT_DIR$/.deps/eMapPrepCuda.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/eintcal.Po" afterPath="$PROJECT_DIR$/.deps/eintcal.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/eintcalPrint.Po" afterPath="$PROJECT_DIR$/.deps/eintcalPrint.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/eval.Po" afterPath="$PROJECT_DIR$/.deps/eval.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/gencau.Po" afterPath="$PROJECT_DIR$/.deps/gencau.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/getInitialState.Po" afterPath="$PROJECT_DIR$/.deps/getInitialState.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/get_atom_type.Po" afterPath="$PROJECT_DIR$/.deps/get_atom_type.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/getpdbcrds.Po" afterPath="$PROJECT_DIR$/.deps/getpdbcrds.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/getrms.Po" afterPath="$PROJECT_DIR$/.deps/getrms.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/initautodock.Po" afterPath="$PROJECT_DIR$/.deps/initautodock.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/input_state.Po" afterPath="$PROJECT_DIR$/.deps/input_state.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/intnbtable.Po" afterPath="$PROJECT_DIR$/.deps/intnbtable.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/investigate.Po" afterPath="$PROJECT_DIR$/.deps/investigate.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/linpack.Po" afterPath="$PROJECT_DIR$/.deps/linpack.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/ls.Po" afterPath="$PROJECT_DIR$/.deps/ls.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/main.Po" afterPath="$PROJECT_DIR$/.deps/main.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/mapping.Po" afterPath="$PROJECT_DIR$/.deps/mapping.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/minmeanmax.Po" afterPath="$PROJECT_DIR$/.deps/minmeanmax.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/mkNewState.Po" afterPath="$PROJECT_DIR$/.deps/mkNewState.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/mkRandomState.Po" afterPath="$PROJECT_DIR$/.deps/mkRandomState.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/mkTorTree.Po" afterPath="$PROJECT_DIR$/.deps/mkTorTree.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/nbe.Po" afterPath="$PROJECT_DIR$/.deps/nbe.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/nonbonds.Po" afterPath="$PROJECT_DIR$/.deps/nonbonds.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/openfile.Po" afterPath="$PROJECT_DIR$/.deps/openfile.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/output_state.Po" afterPath="$PROJECT_DIR$/.deps/output_state.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/parse_PDBQT_line.Po" afterPath="$PROJECT_DIR$/.deps/parse_PDBQT_line.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/parse_com_line.Po" afterPath="$PROJECT_DIR$/.deps/parse_com_line.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/parse_dpf_line.Po" afterPath="$PROJECT_DIR$/.deps/parse_dpf_line.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/parse_param_line.Po" afterPath="$PROJECT_DIR$/.deps/parse_param_line.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/parse_trj_line.Po" afterPath="$PROJECT_DIR$/.deps/parse_trj_line.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/parsetypes.Po" afterPath="$PROJECT_DIR$/.deps/parsetypes.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/prClusterHist.Po" afterPath="$PROJECT_DIR$/.deps/prClusterHist.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/prInitialState.Po" afterPath="$PROJECT_DIR$/.deps/prInitialState.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/prTorConList.Po" afterPath="$PROJECT_DIR$/.deps/prTorConList.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/printEnergies.Po" afterPath="$PROJECT_DIR$/.deps/printEnergies.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/print_2x.Po" afterPath="$PROJECT_DIR$/.deps/print_2x.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/print_atomic_energies.Po" afterPath="$PROJECT_DIR$/.deps/print_atomic_energies.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/print_avsfld.Po" afterPath="$PROJECT_DIR$/.deps/print_avsfld.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/print_rem.Po" afterPath="$PROJECT_DIR$/.deps/print_rem.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/printdate.Po" afterPath="$PROJECT_DIR$/.deps/printdate.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/printhms.Po" afterPath="$PROJECT_DIR$/.deps/printhms.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/qmultiply.Po" afterPath="$PROJECT_DIR$/.deps/qmultiply.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/qtransform.Po" afterPath="$PROJECT_DIR$/.deps/qtransform.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/quicksort.Po" afterPath="$PROJECT_DIR$/.deps/quicksort.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/ranlib.Po" afterPath="$PROJECT_DIR$/.deps/ranlib.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/readPDBQT.Po" afterPath="$PROJECT_DIR$/.deps/readPDBQT.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/read_parameter_library.Po" afterPath="$PROJECT_DIR$/.deps/read_parameter_library.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/readfield.Po" afterPath="$PROJECT_DIR$/.deps/readfield.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/readmap.Po" afterPath="$PROJECT_DIR$/.deps/readmap.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/rep.Po" afterPath="$PROJECT_DIR$/.deps/rep.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/scauchy.Po" afterPath="$PROJECT_DIR$/.deps/scauchy.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/set_cmd_io_std.Po" afterPath="$PROJECT_DIR$/.deps/set_cmd_io_std.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/setflags.Po" afterPath="$PROJECT_DIR$/.deps/setflags.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/simanneal.Po" afterPath="$PROJECT_DIR$/.deps/simanneal.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/sort_enrg.Po" afterPath="$PROJECT_DIR$/.deps/sort_enrg.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/stateLibrary.Po" afterPath="$PROJECT_DIR$/.deps/stateLibrary.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/stop.Po" afterPath="$PROJECT_DIR$/.deps/stop.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/strindex.Po" afterPath="$PROJECT_DIR$/.deps/strindex.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/success.Po" afterPath="$PROJECT_DIR$/.deps/success.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/summarizegrids.Po" afterPath="$PROJECT_DIR$/.deps/summarizegrids.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/support.Po" afterPath="$PROJECT_DIR$/.deps/support.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/swap.Po" afterPath="$PROJECT_DIR$/.deps/swap.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/timesys.Po" afterPath="$PROJECT_DIR$/.deps/timesys.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/timesyshms.Po" afterPath="$PROJECT_DIR$/.deps/timesyshms.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/torNorVec.Po" afterPath="$PROJECT_DIR$/.deps/torNorVec.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/torsion.Po" afterPath="$PROJECT_DIR$/.deps/torsion.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/trilinterp.Po" afterPath="$PROJECT_DIR$/.deps/trilinterp.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/usage.Po" afterPath="$PROJECT_DIR$/.deps/usage.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/warn_bad_file.Po" afterPath="$PROJECT_DIR$/.deps/warn_bad_file.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/weedbonds.Po" afterPath="$PROJECT_DIR$/.deps/weedbonds.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.deps/writePDBQT.Po" afterPath="$PROJECT_DIR$/.deps/writePDBQT.Po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile.everton" afterPath="$PROJECT_DIR$/Makefile.everton" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eval_wrapper.cu" afterPath="$PROJECT_DIR$/eval_wrapper.cu" />
+    </list>
+    <ignored path="Autodock.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Autodock" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="727" column="29" selection-start-line="727" selection-start-column="29" selection-end-line="727" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eval_wrapper.cu" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eval_wrapper.cu">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5110375">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding>
+                <element signature="e#198#219#0" expanded="true" />
+                <element signature="e#6909#7685#0" expanded="true" />
+                <element signature="e#14811#15101#0" expanded="true" />
+                <element signature="e#15131#15550#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="318" column="21" selection-start-line="318" selection-start-column="21" selection-end-line="318" selection-end-column="21" />
+              <folding>
+                <element signature="e#1050#1067#0" expanded="true" />
+                <element signature="e#1367#1480#0" expanded="true" />
+                <element signature="e#1489#1508#0" expanded="true" />
+                <element signature="e#17147#18233#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setflags.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setflags.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#975#996#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calculateEnergies.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calculateEnergies.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calculateEnergies.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calculateEnergies.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="144" column="5" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/autodock/trilinterp.cc" />
+        <option value="$PROJECT_DIR$/src/autodock/eintcal.cc" />
+        <option value="$PROJECT_DIR$/src/autodock/trilinterp.cu" />
+        <option value="$PROJECT_DIR$/src/autodock/eintcal.cu" />
+        <option value="$PROJECT_DIR$/src/autodock/configure" />
+        <option value="$PROJECT_DIR$/src/autodock/Makefile.am" />
+        <option value="$PROJECT_DIR$/src/autodock/Makefile.in" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/eval.h" />
+        <option value="$PROJECT_DIR$/setflags.h" />
+        <option value="$PROJECT_DIR$/main.cc" />
+        <option value="$PROJECT_DIR$/calculateEnergies.h" />
+        <option value="$PROJECT_DIR$/eval_wrapper.cu" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="25" />
+    <option name="width" value="1905" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Autodock" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Autodock" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autodock-cuda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="recentsLimit" value="5" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+    <property name="js.buildTools.grunt.node_interpreter" value="/usr/bin/node" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/autodock" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Autodock" TARGET_NAME="Autodock" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Autodock" TARGET_NAME="Autodock" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <envs />
+      <force value="false" />
+      <verbose value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Autodock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Autodock" TARGET_NAME="Autodock" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Autodock" RUN_TARGET_NAME="Autodock">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Autodock" TARGET_NAME="Autodock" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="Autodock" RUN_TARGET_NAME="Autodock">
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Autodock" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Build All" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40635391-c66c-4c97-8583-50225161cf18" name="Default" comment="" />
+      <created>1446129710911</created>
+      <option name="number" value="Default" />
+      <updated>1446129710911</updated>
+    </task>
+    <task id="LOCAL-00001" summary="adaptação da função de cálculo de energias para cuda">
+      <created>1447370142514</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1447370142514</updated>
+    </task>
+    <task id="LOCAL-00002" summary="adição de fontes cuda ao makefile">
+      <created>1447724176501</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1447724176501</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1905" height="1055" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18654756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
+    <MESSAGE value="adaptação da função de cálculo de energias para cuda" />
+    <MESSAGE value="adição de fontes cuda ao makefile" />
+    <option name="LAST_COMMIT_MESSAGE" value="adição de fontes cuda ao makefile" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+          <folding>
+            <element signature="e#1050#1067#0" expanded="true" />
+            <element signature="e#1367#1480#0" expanded="true" />
+            <element signature="e#1489#1508#0" expanded="true" />
+            <element signature="e#17147#18233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculateEnergies.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculateEnergies.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="144" column="5" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/eintcal.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="55" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/Makefile.am">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="681" column="0" selection-start-line="681" selection-start-column="0" selection-end-line="681" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/Makefile.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/install-sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="470" column="57" selection-start-line="470" selection-start-column="57" selection-end-line="470" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/configure">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3307" column="19" selection-start-line="3307" selection-start-column="16" selection-end-line="3307" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/configure.ac">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/trilinterp.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="206" column="46" selection-start-line="206" selection-start-column="46" selection-end-line="206" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/trilinterp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/torsion.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/eintcal.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/eintcal.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/Makefile.am">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/trilinterp.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="206" column="46" selection-start-line="206" selection-start-column="46" selection-end-line="206" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/trilinterp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/torsion.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/eintcal.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/trilinterp.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/trilinterp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/torsion.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/eintcal.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/trilinterp.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/torsion.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/eintcalPrint.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5896226">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/analysis.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7783019">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/trilinterp.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/eintcal.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="151" column="65" selection-start-line="151" selection-start-column="65" selection-end-line="151" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/eintcal.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="55" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/Makefile.am">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="681" column="0" selection-start-line="681" selection-start-column="0" selection-end-line="681" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/Makefile.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3488" column="58" selection-start-line="3488" selection-start-column="58" selection-end-line="3488" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/trilinterp.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.3083513">
+          <caret line="206" column="46" selection-start-line="206" selection-start-column="46" selection-end-line="206" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/trilinterp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/torsion.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.108137">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/configure.ac">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43361884">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/configure">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.200883">
+          <caret line="4719" column="43" selection-start-line="4719" selection-start-column="43" selection-end-line="4719" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autodock/install-sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.016059957">
+          <caret line="470" column="57" selection-start-line="470" selection-start-column="57" selection-end-line="470" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculateEnergies.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="144" column="5" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="727" column="29" selection-start-line="727" selection-start-column="29" selection-end-line="727" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/select_alloc_wrapper.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eval.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="35" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#975#996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setflags.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="318" column="21" selection-start-line="318" selection-start-column="21" selection-end-line="318" selection-end-column="21" />
+          <folding>
+            <element signature="e#1050#1067#0" expanded="true" />
+            <element signature="e#1367#1480#0" expanded="true" />
+            <element signature="e#1489#1508#0" expanded="true" />
+            <element signature="e#17147#18233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculateEnergies.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eval_wrapper.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5110375">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="e#198#219#0" expanded="true" />
+            <element signature="e#6909#7685#0" expanded="true" />
+            <element signature="e#14811#15101#0" expanded="true" />
+            <element signature="e#15131#15550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
