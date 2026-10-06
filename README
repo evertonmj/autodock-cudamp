@@ -1,42 +1,171 @@
+AutoDock CUDA-MP
+Experimental CUDA-accelerated implementation of AutoDock focused on exploring GPU parallelism for molecular docking and binding-energy evaluation.
+This repository contains a modified AutoDock codebase with CUDA-specific components designed to move computationally intensive portions of the docking workflow to NVIDIA GPUs.
+Note
+This is an experimental/research project based on AutoDock. It is not the official AutoDock distribution.
 
-What is AutoDock?
+Overview
+Molecular docking attempts to predict how a small molecule — such as a ligand or drug candidate — binds to a receptor with a known three-dimensional structure.
+Docking algorithms can require a large number of energy evaluations while exploring possible ligand conformations. These calculations make molecular docking an interesting target for parallel computing.
+AutoDock CUDA-MP explores the use of NVIDIA CUDA to accelerate parts of this workload.
+The project combines the existing AutoDock C/C++ codebase with CUDA kernels and GPU-oriented data preparation.
+Goals
+The main goals of this project are:
+- Explore GPU acceleration of AutoDock workloads.
+- Parallelize computationally expensive energy evaluations.
+- Experiment with CUDA-based molecular docking.
+- Reduce execution time for compute-intensive docking workloads.
+- Investigate heterogeneous CPU/GPU execution for scientific computing.
+Architecture
+At a high level, the project follows the traditional AutoDock workflow while introducing CUDA-based execution for selected computational stages.
+                 AutoDock
+                    |
+                    v
+          Ligand / receptor data
+                    |
+                    v
+             Grid preparation
+                    |
+                    v
+          Search / conformations
+                    |
+                    v
+        +----------------------+
+        |   Energy Evaluation  |
+        +----------+-----------+
+                   |
+             CUDA execution
+                   |
+                   v
+        +----------------------+
+        |     NVIDIA GPU       |
+        |                      |
+        |  Parallel evaluation |
+        |  of docking states   |
+        +----------+-----------+
+                   |
+                   v
+            Docking results
+CUDA-related components in the repository include files such as:
+eval_wrapper.cu
+cuda_wrapper.h
+eAllocPrepCuda.cc
+eMapPrepCuda.cc
+eMapPrepCuda.h
+These components provide the bridge between the existing AutoDock implementation and GPU execution.
+Technology
+The project primarily uses:
+- C
+- C++
+- NVIDIA CUDA
+- GNU Autotools
+- Make
+- AutoDock 4 codebase
+Requirements
+To build the CUDA-enabled version you will need a development environment containing:
+- C/C++ compiler
+- GNU Make
+- Autoconf / Automake
+- NVIDIA GPU
+- NVIDIA CUDA Toolkit
+- Compatible NVIDIA driver
+Verify that CUDA is available:
+nvcc --version
+Verify that the GPU is visible:
+nvidia-smi
+Building
+Clone the repository:
+git clone https://github.com/evertonmj/autodock-cudamp.git
+cd autodock-cudamp
+If configure.ac has been modified, regenerate the configuration files:
+aclocal
+autoconf
+Configure the project with CUDA support:
+./configure --prefix=/path/to/install --enable-cuda
+If the project was previously configured without CUDA support, clean the previous build:
+make clean
+Compile:
+make
+Install:
+make install
+The resulting AutoDock executable should be available under:
+/path/to/install/bin
+CUDA Build
+CUDA support is enabled during configuration:
+./configure --enable-cuda
+Or, when installing without root privileges:
+./configure \
+    --prefix=$HOME/autodock-cuda \
+    --enable-cuda
 
-AutoDock is a suite of automated docking tools. It is designed to
-predict how small molecules, such as substrates or drug candidates,
-bind to a receptor of known 3D structure.
+make
+make install
+The configuration process enables the CUDA-specific sections of the source code used during compilation.
+Project Structure
+A simplified view of the repository:
+autodock-cudamp/
+├── src/
+├── eval_wrapper.cu
+├── eval_wrapper.h
+├── cuda_wrapper.h
+├── eAllocPrepCuda.cc
+├── eMapPrepCuda.cc
+├── eMapPrepCuda.h
+├── analysis.cc
+├── calculateEnergies.cc
+├── configure.ac
+├── CMakeLists.txt
+├── Makefile.am
+├── CUDAREADME
+└── README
+Most of the codebase originates from AutoDock, while the CUDA-specific files implement or support the GPU acceleration experiments.
+Why CUDA?
+Molecular docking explores many possible molecular configurations and repeatedly evaluates their associated energies.
+Many of these calculations can potentially be performed independently. GPUs are designed to execute large numbers of parallel operations, making CUDA a natural platform for investigating acceleration of these workloads.
+Conceptually:
+CPU
 
-AutoDock actually consists of two main programs: AutoDock performs
-the docking of the ligand to a set of grids describing the target
-protein; AutoGrid pre-calculates these grids.
-
-In addition to using them for docking, the atomic affinity grids
-can be visualised. This can help, for example, to guide organic
-synthetic chemists design better binders.
-
-We have also developed a graphical user interface called AutoDockTools,
-or ADT for short, which amongst other things helps to set up which
-bonds will treated as rotatable in the ligand and to analyze dockings.
-
-AutoDock has applications in:
-
-    X-ray crystallography; 
-    structure-based drug design; 
-    lead optimization; 
-    virtual screening (HTS); 
-    combinatorial library design; 
-    protein-protein docking; 
-    chemical mechanism studies.
-
-
-Installing AutoDock
-
-Read the INSTALL file in this directory for instructions on
-installing AutoDock.
-
-
-Copying AutoDock
-
-Please refer to the file "COPYING" in this directory for
-more information on copying AutoDock.
+configuration 1 ---> energy
+configuration 2 ---> energy
+configuration 3 ---> energy
+configuration 4 ---> energy
 
 
+GPU
+
+configuration 1 --+
+configuration 2 --+
+configuration 3 --+--> parallel energy evaluation
+configuration 4 --+
+       ...        |
+configuration N --+
+The objective is to exploit this parallelism while preserving the docking behavior of the underlying AutoDock implementation.
+Use Cases
+This repository may be useful for:
+- GPU computing experiments
+- CUDA optimization studies
+- Molecular docking research
+- Computational chemistry experiments
+- High-performance computing studies
+- Parallel algorithm research
+- Learning how legacy scientific software can be adapted for GPU execution
+Project Status
+This repository should be considered experimental/research software.
+It is particularly useful as a reference for investigating CUDA integration with an existing scientific C/C++ codebase.
+For production molecular docking workloads, consider actively maintained AutoDock projects and validate results carefully before using them for scientific conclusions.
+Background
+AutoDock is a suite of automated molecular docking tools designed to predict how small molecules bind to receptors with known three-dimensional structures.
+Typical applications include:
+- Structure-based drug design
+- Virtual screening
+- Lead optimization
+- Protein-ligand docking
+- Chemical mechanism studies
+This repository explores how parts of that computational workload can be accelerated using GPU parallelism.
+License
+This repository contains AutoDock-derived source code and is distributed under the GNU General Public License v2.0 (GPL-2.0).
+See the COPYING file for the complete license terms.
+Acknowledgements
+This project builds upon the work of the AutoDock developers and research community.
+AutoDock has played an important role in computational molecular docking and structure-based drug discovery. This repository focuses specifically on experimentation with GPU/CUDA acceleration of that codebase.
+AutoDock CUDA-MP — exploring GPU acceleration for molecular docking.
